@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>&pi;thon &pi;raten RoboCup Rescue Line</title>
+		<link href="style.css" type="text/css" rel="stylesheet">
+		<link rel=icon href="favicon.ico" type="image/x-icon"> <!-- kleines Logo neben <title> -->
+	</head>
+	<body id="body_Erklaerungen">
+		<p> <br/> </p> <!--kleiner Absatz fuer bessere Uebersicht-->
+		<h1> HCSR04 </h1>
+		<br/>
+		<form>
+  			<input class="backButton"type="button" value="Go back!" onclick="history.back()">
+		</form>
+		<br/>
+		<br/>
+		Der HCSR04 ist ein Ultraschallsensor, welcher sich zum Messen geringer Entfernungen (ca. 3 cm - 300 cm) eignet. 
+		Wir verwenden ihn jetzt schon mehrere Jahre in Folge und er hat sich als sehr zuverlässig und einfach auzulesen 
+		bestätigt. Je nach Temperatur beträgt seine Genauigkeit um die 3 mm, was ausreichend ist, um ein im Parkour 
+		stehendes Hindernis oder die Wände im Rescuebereich zu erkennen. Seine Messtechnik basiert auf einem kurzem, 
+		sehr hohem Schallimpuls, welcher von im Weg stehenden Objekten zurück zum Sensor reflektiert wird. Aus der 
+		Zeitspanne zwischen dem Aussenden des Schallimpulses und dem Empfang des Echos kann die Entfernung zum 
+		jeweiligen Objekt berechnet werden. Im letzen Jahr haben wir uns außerdem intensiv mit der Erkennung der 
+		Kugeln im Rescuebereich beschäftigt, jedoch eignet sich der auf Schallwellen basierende Sensor nicht 
+		wirklich gut dazu, weil er zumindest in unseren Tests die Kugeln nur bis zu einer maximalen Entfernung 
+		von 15 cm erkennen konnte. Unsere Vermutung ist, dass sich ab dieser Entfernung die ausgesandten 
+		Schallwellen um die Kugel bewegen und sie deshalb nicht mehr zurückgeworfen werden.
+	</body>	
+</html>

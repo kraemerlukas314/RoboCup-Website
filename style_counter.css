@@ -1,0 +1,16 @@
+body {
+  text-align: center;
+}
+
+td {
+    font-weight: bold;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    margin: 0px;
+}

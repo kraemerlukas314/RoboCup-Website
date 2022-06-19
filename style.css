@@ -1,0 +1,226 @@
+body {
+  margin: 0px; /*erstellt Rand um den body*/
+  padding: 200px; /*erstellt Rand um komplette website*/
+  padding-top: 0px; /*Rand nach oben entfernen*/
+  padding-bottom: 80px; /*unten nur dünner Rand*/
+  background: #000; /*Hintergrundfarbe = schwarz*/
+  background-image: url("./images/Hintergrundbild.jpg");  
+  text-align: center; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /*Hintergrundbild bewegt sich beim Scrollen nicht mit*/
+  background-size: 1000px;
+  color: white;
+  font-weight: bold;
+  font-size: large;
+}
+
+a {
+  color: white; 
+  border-color: white;
+}
+
+a:hover {
+  color: grey;
+}
+
+ul {
+  display:table-row;
+  text-align: left;
+}
+
+li {
+  /*display: inline-block; wichtig!!!*/
+  font-weight: bold;
+  
+}
+
+div {  
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  /*border: 5px solid red;*/ /*macht <div> sichtbar*/
+}
+
+li a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-family: Source Sans Pro;
+  font-weight: lighter;
+  font-size: 30px;
+  padding: 20px;
+}
+
+table {
+	text-align: center;
+	border: white 5px inset;
+	margin-left: auto;
+	margin-right: auto;
+  font-size: x-large;
+}
+
+td {
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+th {
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-decoration: underline;
+}
+
+.menue:hover {
+  color: white; /*sonst wären die Menüpunkte auch grau, wenn man über sie fährt*/
+
+}
+.menue::after {
+  content: '';
+  width: 0;
+  height: 2px;
+  display: block;
+  background: #fff;
+  transition: width 0.4s 
+}
+
+.menue:hover::after {
+  width: 100%;
+  transition: width .4s;
+}
+
+.Link_unterstrichen {
+	text-decoration: underline;
+}
+
+#body_Erklaerungen{
+  font-size: x-large;
+}
+
+.backButton {
+  background:linear-gradient(to bottom, #03ab30 5%, #000000 100%);
+  background-color:#03ab30;
+  border-radius:42px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Trebuchet MS;
+  font-size:28px;
+  font-weight:bold;
+  padding:18px 42px;
+  text-decoration:none;
+  text-shadow:18px -9px 3px #11330c;
+}
+
+.backButton:hover {
+  background:linear-gradient(to bottom, #000000 5%, #03ab30 100%);
+  background-color:#000000;
+}
+
+.backButton:active {
+  position:relative;
+  top:1px;
+}
+
+.container {
+  /*margin: auto;
+  position: absolute;
+  top: 10%;
+  left: 45%;
+  transform: translate(-50%) translateY(-50%);*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.menue_ul {
+  list-style-type: none;
+}
+
+.menue_li {
+  display: inline-block;
+}
+
+.div_raspi {
+  
+}
+
+.divs_Szenario1 {
+  border: solid grey;
+  text-align: center;
+  float: left;
+  background-color: black;
+  display:block;
+  width: 200px;
+  height: 310px;
+  padding: 10px;
+  padding-right: 5px;
+  margin: 1em;
+  text-align: left;
+}
+
+.div_Umsetzung {
+  text-align: justify;
+}
+
+.div_Erklaerungen {
+  text-align: justify;  
+}
+
+.body_Szenario {
+  margin: auto;
+  padding: auto;
+}
+
+.img-area {
+  margin: 5% auto;
+  background: url('./images/kugeln.gif');
+  width: 480px;
+  height: 270px;
+  position: relative;
+  overflow: hidden;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center; 
+}
+
+.img-caption {
+  line-height: 25px;
+  position: absolute;
+  bottom: -100%;
+  width: 2000px;
+  transition: 600ms linear;
+  padding-right: 630px;
+}
+
+.effect-top {
+  border-bottom: 50px solid tomato;
+  border-right: 400px solid tomato;  
+}
+
+.effect-bottom {
+  text-align: center;
+  background: tomato;
+  height: 75px;
+  font-family: poppins;
+  font-size: 20px;
+  color: #fff;
+  width: 50%;
+}
+
+.img-area:hover .img-caption {
+  bottom: 0;
+}
+
+@media(max-width: 500px) {
+  /* Error anzeigen, da die Webseite dann auf dem Handy geöffnet wird */
+}
+
+
+

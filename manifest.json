@@ -1,0 +1,9 @@
+{
+  "name": "python piraten AWP",
+  "short_name": "python piraten AWP",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "display": "fullscreen,
+  "scope": "/",
+  "start_url": "/"
+}
