@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> &pi;thon &pi;raten RoboCup Rescue Line</title >
+		<link href="style.css" type="text/css" rel="stylesheet" >
+		<link rel=icon href="favicon.ico" type="image/x-icon"> <!-- kleines Logo neben <title> -->
+	</head>
+	<body>
+		<br> </br>
+		<br> </br>
+		<form>
+  			<input class="backButton"type="button" value="Go back!" onclick="history.back()">
+		</form>
+		<br> </br>
+
+		<h1> Unser Roboter: Saison 2022 </h1>
+		<h3> verwendete Hardware: </h3>
+		<div>
+     		<ul>
+        		<li> Raspberry Pi 4B </li>
+				<li> Raspberry Pi Kamera + USB Kamera </li>
+				<li> 3x VL53L0X Laser Sensor </li>
+				<li> Pololu 20d </li>
+                <li> Servos </li>
+				<li> BNO055 Gyro Sensor </li>
+				<li> L293D H-Brücke </li>
+      		</ul>
+    	</div>
+
+		<h3><u>Umsetzung</u></h3>
+		In diesem Jahr haben wir für die Linienverfolgung erneut eine Kamera genutzt,
+        genauere Informationen dazu können in unserem <a href="./downloads/TDP2021.pdf">TDP</a> von letztem Jahr nachgelesen werden.
+        Hinzu kam jedoch eine zweite USB Kamera, die deutlich weiter nach vorne schauen konnte, damit wir die Kugeln im Rescuebereich
+        auch aus großer Entfernung (ca. 60cm) erkennen konnten. Hierzu nutzen wir ein selbst trainiertes Neuronales Netz, dass uns die
+        Position der Opfer und ob es lebend oder tod war zurückgab. Hiermit erzielten wir nun endlich akzeptable Ergebnisse, nachdem uns
+        im letzten Jahr insbesondere runde Schatten Probleme bereiteten.
+        Außerdem nutzten wir im Rescuebereich zwei seitlich platzierte Abstandssensoren, um mittels Trigonometrie den Winkel zur Wand
+        berechnen zu können und uns ab und zu gerade auszurichten.
+		<br> </br>
+		<br> </br>
+		<h3>Hier ein Video unseres Roboters:</h3>
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/CYaqtChriPM?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</body>
+</html>
