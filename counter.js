@@ -15,28 +15,33 @@ function updatePoints(){
         EVAC_LOP_MULTIPLIER = Number(document.getElementById("evac_lop_multiplier").value);
     }
 
-    console.log(EVAC_LOP_MULTIPLIER);
-
     // calculates points for tiles only
     let sec1_tiles = Number(document.getElementById("sec1_tiles").value);
     let sec2_tiles = Number(document.getElementById("sec2_tiles").value);
     let sec3_tiles = Number(document.getElementById("sec3_tiles").value);
     let sec4_tiles = Number(document.getElementById("sec4_tiles").value);
     let sec5_tiles = Number(document.getElementById("sec5_tiles").value);
+    let sec6_tiles = Number(document.getElementById("sec6_tiles").value);
+    let sec7_tiles = Number(document.getElementById("sec7_tiles").value);
 
     let sec1_tries = document.getElementById("sec1_tries").options[document.getElementById("sec1_tries").selectedIndex].value;
     let sec2_tries = document.getElementById("sec2_tries").options[document.getElementById("sec2_tries").selectedIndex].value;
     let sec3_tries = document.getElementById("sec3_tries").options[document.getElementById("sec3_tries").selectedIndex].value;
     let sec4_tries = document.getElementById("sec4_tries").options[document.getElementById("sec4_tries").selectedIndex].value;
     let sec5_tries = document.getElementById("sec5_tries").options[document.getElementById("sec5_tries").selectedIndex].value;
+    let sec6_tries = document.getElementById("sec6_tries").options[document.getElementById("sec6_tries").selectedIndex].value;
+    let sec7_tries = document.getElementById("sec7_tries").options[document.getElementById("sec7_tries").selectedIndex].value;
 
     let sec1_points = Math.max((5-(sec1_tries - 1) * 2) * sec1_tiles, 0);
     let sec2_points = Math.max((5-(sec2_tries - 1) * 2) * sec2_tiles, 0);
     let sec3_points = Math.max((5-(sec3_tries - 1) * 2) * sec3_tiles, 0);
     let sec4_points = Math.max((5-(sec4_tries - 1) * 2) * sec4_tiles, 0);
     let sec5_points = Math.max((5-(sec5_tries - 1) * 2) * sec5_tiles, 0);
+    let sec6_points = Math.max((5-(sec6_tries - 1) * 2) * sec6_tiles, 0);
+    let sec7_points = Math.max((5-(sec7_tries - 1) * 2) * sec7_tiles, 0);
 
-    let points_tiles = sec1_points + sec2_points + sec3_points + sec4_points + sec5_points;
+
+    let points_tiles = sec1_points + sec2_points + sec3_points + sec4_points + sec5_points + sec6_points + sec7_points;
     // calculates points for gaps, speed bumps etc.
     let gaps = Number(document.getElementById("gaps").value);
     let intersections = Number(document.getElementById("intersections").value);
@@ -53,11 +58,9 @@ function updatePoints(){
     let points_linefollowing = (gaps*10) + (intersections*10) + (speed_bumps*5) + (ramps*10) + (seesaws*15) + (obstacles*15) // points for gaps, speed bumps, obstacles, intersections etc.
 
     let multiplier = 1;
-    if (victims > 0) multiplier = multiplier * Math.pow(VICTIM_MULTIPLIER, victims); 
-    if (rescue_kit > 0) multiplier = multiplier * RESCUE_KIT_MULTIPLIER;
-
-    // deduct evac LoPs from multiplier
-    multiplier = multiplier - (EVAC_LOP_MULTIPLIER * lops_evac);
+    let multiplier_ded_lop_evac = lops_evac * EVAC_LOP_MULTIPLIER;
+    if (victims > 0) multiplier = multiplier * Math.pow(VICTIM_MULTIPLIER - multiplier_ded_lop_evac, victims); 
+    if (rescue_kit > 0) multiplier = multiplier * (RESCUE_KIT_MULTIPLIER - multiplier_ded_lop_evac);
 
     let overall_points = points_tiles + points_linefollowing
     if (multiplier > 1) overall_points = overall_points * multiplier;
@@ -73,6 +76,8 @@ function updatePoints(){
     overall_points = Math.round(overall_points)
 
     document.getElementById("result").innerHTML = overall_points;
+
+    console.log(multiplier);
 }
 
 
