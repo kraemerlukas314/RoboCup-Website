@@ -7,6 +7,10 @@
 		<link rel="manifest" href="manifest.json">
 	</head>
 	<body>
+		<br>
+		<a href="../index.html">
+      		<img src="../icon_home.png" alt="icon_home" style="width: 6%; max-width: 100%;">
+    	</a>
 		<div class="container">
 			<ul class="menue_ul">
 				<li class="menue_li"><a href="bitflip_about_us.html" class="menue">about us</a></li>
@@ -27,9 +31,17 @@
 				<li> 2x MG90S micro servo </li>				
 				<li> 2x 18650 batteries </li>
 				<li> 2x 12V Step Up Modules (U3V70F12) </li>
-				<li> 2x 5V Step Up Modules (FEICHAO 8A UBEC) </li>	
+				<li> 2x 5V Step Down Modules (FEICHAO 8A UBEC) </li>	
 				<li> 3x L293D H-bridge </li>			
       		</ul>
     	</div>
+
+    	<u> <h3> Software overview </h3> </u>
+    	<p>
+    		The primary program was run on a Raspberry Pi, and the motor control was handled by an Arduino Nano that was USB-connected to the Pi. Basically, the Pi connects with the Nano whenever it requires a sensor value or wants to control a motor, and the Pi handles all the computation and program flow. By doing so, we could leverage the strengths of both platforms as the Nano is adept at working with a wide range of sensors and actuators while the Pi has plenty of computation power. We used a camera both during line following and in the evacuation zone in addition to the two distance sensors that were used for obstacle detection and in the evacuation zone. Additional details regarding the hardware and software of this years robot can be found in our <a href="files/BitFlip TDP 2023.pdf" target="_blank">TDP</a> and in our <a href="https://www.github.com/saegersven/robocup23" target="_blank">GitHub repository</a>.
+    	</p>
+    	<u> <h3> Image of our robot </h3> </u>
+    	<br>
+    	<img src="files/BitFlip robot 2023.JPG" alt="Image of our robot">
 	</body>	
 </html>

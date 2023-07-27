@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         iteration += 1 / 3;
-      }, 30);
+      }, 25);
     });
 
     h1Element.addEventListener("mouseout", () => {

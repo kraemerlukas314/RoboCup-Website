@@ -14,7 +14,7 @@ body {
 }
 
 p {
-  align: "justify";
+  text-align: justify;
 }
 
 a {
@@ -50,6 +50,10 @@ li a {
   font-weight: lighter;
   font-size: 30px;
   padding: 20px;
+}
+
+img {
+  max-width: 100%;
 }
 
 .menue:hover {
