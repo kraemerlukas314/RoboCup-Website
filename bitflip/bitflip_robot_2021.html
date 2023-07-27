@@ -1,0 +1,51 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>BitFlip subsite</title>
+		<link href="style_bitflip.css" type="text/css" rel="stylesheet">
+		<link rel=icon href="favicon.ico" type="image/x-icon">
+		<link rel="manifest" href="manifest.json">
+	</head>
+	<body>
+		<br>
+		<a href="../index.html">
+      		<img src="../icon_home.png" alt="icon_home" style="width: 6%; max-width: 100%;">
+    	</a>
+		<div class="container">
+			<ul class="menue_ul">
+				<li class="menue_li"><a href="bitflip_about_us.html" class="menue">about us</a></li>
+				<li class="menue_li"><a href="bitflip_robot.html" class="menue">robot</a></li>
+				<li class="menue_li"><a href="bitflip_contact.html" class="menue">contact</a></li>
+			</ul>
+		</div>
+		<u> <h3> Hardware overview </h3> </u>
+		<div>
+     		<ul>
+        		<li> 1x Raspberry Pi 4B </li>
+        		<li> 1x Teensy 3.6 </li>
+				<li> 1x Raspberry Pi Camera V2.1</li>
+				<li> 1x VL53L0X Laser Sensor </li>
+				<li> 1x BNO055 Gyro Sensor </li>
+				<li> 2x Pololu 20D (12V, 140PWM) </li>
+				<li> 1x Tower Pro MG995 </li>	
+				<li> 1x MG90S Micro servo </li>				
+				<li> 1x 2S Lipo battery </li>
+				<li> 1x 12V Step Up Module (XL6009) </li>
+				<li> 1x 5V Step Down Module (LM2596) </li>	
+				<li> 1x L293D H-bridge </li>			
+      		</ul>
+    	</div>
+
+    	<u> <h3> Software overview </h3> </u>
+    	<p>
+    		In 2021, we employed a Raspberry Pi in conjunction with a Teensy microcontroller, utilizing UART connection. The Pi was tasked with processing the camera frames, while the Teensy was responsible for driving the motors. Initially, we employed a chain chassis, which proved highly effective in navigating ramps and speed bumps compared to subsequent robot models. However, due to the camera's front-mounted position, distant from the center of rotation, we eventually transitioned to a more versatile chassis design, enabling turning around the front axis. More information about the robot can be found in our <a href="files/BitFlip TDP 2021.pdf" target="_blank">TDP</a>.
+    	</p>
+    	<u> <h3> Image of our robot </h3> </u>
+    	<br>
+    	<img src="files/BitFlip robot 2021.png" alt="Image of our robot">
+    	<br>
+    	<u> <h3> Video of our robot </h3> </u>
+    	<br>
+    	<iframe width="560" height="315" src="https://www.youtube.com/embed/VUiwhPXXlTU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+	</body>	
+</html>

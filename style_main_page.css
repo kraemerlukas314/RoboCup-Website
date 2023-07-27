@@ -20,6 +20,11 @@ h2 {
   margin-bottom: 6rem; /* Adjust this value as needed */
 }
 
+h4 {
+  font-family: 'Space Mono', monospace;
+  color: white;
+}
+
 a {
   text-decoration: none;
 }

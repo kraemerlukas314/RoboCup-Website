@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>BitFlip subsite</title>
+		<link href="style_bitflip.css" type="text/css" rel="stylesheet">
+		<link rel=icon href="favicon.ico" type="image/x-icon">
+		<link rel="manifest" href="manifest.json">
+	</head>
+	<body>
+		<br>
+		<a href="../index.html">
+      		<img src="../icon_home.png" alt="icon_home" style="width: 6%; max-width: 100%;">
+    	</a>
+		<div class="container">
+			<ul class="menue_ul">
+				<li class="menue_li"><a href="bitflip_about_us.html" class="menue">about us</a></li>
+				<li class="menue_li"><a href="bitflip_robot.html" class="menue">robot</a></li>
+				<li class="menue_li"><a href="bitflip_contact.html" class="menue">contact</a></li>
+			</ul>
+		</div>
+		<u> <h3> Hardware overview </h3> </u>
+		<div>
+     		<ul>
+        		<li> 1x Raspberry Pi 3B+ </li>
+				<li> 1x Raspberry Pi Camera V2.1 </li>
+				<li> 1x Arduino UNO </li>
+				<li> 1x HCSR04 </li>	
+				<li> 1x EvShield </li>	
+				<li> 2x LEGO color sensors </li>	
+				<li> 2x large LEGO Ev3 motors </li>	
+				<li> 2x small LEGO Ev3 motors </li>	
+      		</ul>
+    	</div>
+
+    	<u> <h3> Software overview </h3> </u>
+    	<p>
+			In the previous season, we encountered problems with a conventional light sensor array, primarily due to a lack of calibration, leading to inconsistent measurements during competitions. Consequently, in 2020, we took a significant step forward by adopting a camera-based approach for line following. The camera interfaced by the Raspberry Pi, evaluated each frame and transmitted information to an Arduino UNO via USB. The UNO then processed the data to determine optimal motor speeds while also driving the LEGO motors via an EvShield. As we were constrained by time limitations, we were unable to implement a proper search algorithm for locating victims. Instead, we adopted a strategy of navigating the evacuation zone in a randomized manner, while employing the encoders in the LEGO motors to detect the presence of victims within the robot's arm.
+    	</p>
+    	<u> <h3> Image of our robot </h3> </u>
+    	<br>
+    	<img src="files/BitFlip robot 2020.png" alt="Image of our robot">
+    	<br>
+    	<u> <h3> Video of our robot </h3> </u>
+    	<br>
+    	<iframe width="754" height="424" src="https://www.youtube.com/embed/K8mmN4Eb0Kg?start=27" frameborder="0" allow="accelerometer; 
+		autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+	</body>	
+</html>
