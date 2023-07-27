@@ -1,0 +1,28 @@
+body {
+  display: grid;
+  place-items: center;
+  height: 20vh;
+  background-color: black;
+  margin: 0rem;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: 'Space Mono', monospace;
+  color: white;
+  font-size: 52px;
+}
+
+h2 {
+  font-family: 'Space Mono', monospace;
+  color: white;
+}
+
+a {
+  color: white; 
+  border-color: white;
+}
+
+a:hover {
+  color: grey;
+}
