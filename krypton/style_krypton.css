@@ -11,6 +11,7 @@ body {
   color: white;
   font-weight: bold;
   font-size: x-large;
+  font-family: 'Space Mono', monospace;
 }
 
 p {
@@ -18,6 +19,7 @@ p {
 }
 
 a {
+  font-family: 'Space Mono', monospace;
   color: white; 
   border-color: white;
 }
@@ -27,11 +29,15 @@ a:hover {
 }
 
 ul {
+  font-weight: bold;
+  font-family: 'Space Mono', monospace;
   display:table-row;
   text-align: left;
 }
 
 div {  
+  font-weight: bold;
+  font-family: 'Space Mono', monospace;
   display: flex;
   justify-content: center;
   align-items: left;
@@ -40,6 +46,11 @@ div {
 
 .centered_div {
   text-align: justify;
+}
+
+li {
+  font-weight: bold;
+  font-family: 'Space Mono', monospace;
 }
 
 li a {
@@ -67,6 +78,16 @@ img {
   display: block;
   background: #fff;
   transition: width 0.4s 
+}
+
+ul.menue_ul {
+  font-weight: bold;
+  font-family: 'Space Mono', monospace;
+}
+
+ul.menue_ul li a {
+  font-weight: bold;
+  font-family: 'Space Mono', monospace;
 }
 
 .menue:hover::after {
