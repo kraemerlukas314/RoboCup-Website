@@ -1,0 +1,214 @@
+<html>
+	<head>
+		<title>RoboCup Rescue Line Counter (2024)</title>
+		<link href="style_counter.css" type="text/css" rel="stylesheet">
+        <script src="counter.js"></script>
+	</head>
+	<body>
+        <h1> RoboCup Rescue Line Counter (2022)</h1>
+        <table>
+            <tr>
+                <th></th>
+                <th>Tiles</th>
+                <th>Try</th>
+            </tr>
+
+            <tr>
+                <td>Section 1</td>
+                <td><input id="sec1_tiles" placeholder="Number tiles" type="number" min="0"></td>
+                <td>
+                    <select id="sec1_tries" name="1. Section">
+                        <option value="1">1 Try</option>
+                        <option value="2">2 Try</option>
+                        <option value="3">3 Try</option>
+                        <option value="4">3+ Try</option>
+                    </select>
+                </td>
+
+            <tr>
+                <td>Section 2</td>
+                <td><input id="sec2_tiles" placeholder="Number tiles" type="number" min="0"></td>
+                <td>
+                    <select id="sec2_tries" name="2. Section">
+                        <option value="1">1 Try</option>
+                        <option value="2">2 Try</option>
+                        <option value="3">3 Try</option>
+                        <option value="4">3+ Try</option>
+                    </select>
+                </td>
+
+            <tr>
+                <td>Section 3</td>
+                <td><input id="sec3_tiles" placeholder="Number tiles" type="number" min="0"></td>
+                <td>
+                    <select id="sec3_tries" name="3. Section">
+                        <option value="1">1 Try</option>
+                        <option value="2">2 Try</option>
+                        <option value="3">3 Try</option>
+                        <option value="4">3+ Try</option>
+                    </select>
+                </td>
+
+            <tr>
+                <td>Section 4</td>
+                <td><input id="sec4_tiles" placeholder="Number tiles" type="number" min="0"></td>
+                <td>
+                    <select id="sec4_tries" name="4. Section">
+                        <option value="1">1 Try</option>
+                        <option value="2">2 Try</option>
+                        <option value="3">3 Try</option>
+                        <option value="4">3+ Try</option>
+                    </select>
+                </td>
+
+            <tr>
+                <td>Section 5</td>
+                <td><input id="sec5_tiles" placeholder="Number tiles" type="number" min="0"></td>
+                <td>
+                    <select id="sec5_tries" name="5. Section">
+                        <option value="1">1 Try</option>
+                        <option value="2">2 Try</option>
+                        <option value="3">3 Try</option>
+                        <option value="4">3+ Try</option>
+                    </select>
+                </td>
+            </tr>
+             <tr>
+                <td>Section 6</td>
+                <td><input id="sec6_tiles" placeholder="Number tiles" type="number" min="0"></td>
+                <td>
+                    <select id="sec6_tries" name="6. Section">
+                        <option value="1">1 Try</option>
+                        <option value="2">2 Try</option>
+                        <option value="3">3 Try</option>
+                        <option value="4">3+ Try</option>
+                    </select>
+                </td>
+            </tr>
+             <tr>
+                <td>Section 7</td>
+                <td><input id="sec7_tiles" placeholder="Number tiles" type="number" min="0"></td>
+                <td>
+                    <select id="sec7_tries" name="7. Section">
+                        <option value="1">1 Try</option>
+                        <option value="2">2 Try</option>
+                        <option value="3">3 Try</option>
+                        <option value="4">3+ Try</option>
+                    </select>
+                </td>
+            </tr>
+			<!-- Placeholder: -->
+			<tr>
+				<td bgcolor="#FFFFFF" style="line-height:20px;" colspan=3>&nbsp;</td>
+			</tr>
+
+            <tr>
+                <td>Gaps</td>
+                <td><input id="gaps" placeholder="Number gaps" type="number" min="0"></td>
+				<td>
+					<button id = "gaps_decrement" onclick="decrement(this.id)">-</button>
+					<button id = "gaps_increment" onclick="increment(this.id)">+</button>
+                </td>
+            </tr>
+
+			<tr>
+                <td>Intersections</td>
+                <td><input id="intersections" placeholder="Number Intersections" type="number" min="0"></td>
+				<td>
+					<button id = "intersections_decrement" onclick="decrement(this.id)">-</button>
+                    <button id = "intersections_increment" onclick="increment(this.id)">+</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Speed bumps</td>
+                <td><input id="speed_bumps" placeholder="Number speed bumps" type="number" min="0"></td>
+                <td>
+                    <button id = "speed_bumps_decrement" onclick="decrement(this.id)">-</button>
+                    <button id = "speed_bumps_increment" onclick="increment(this.id)">+</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Ramps</td>
+                <td><input id="ramps" placeholder="Number ramps" type="number" min="0"></td>
+                <td>                    
+                    <button id = "ramps_decrement" onclick="decrement(this.id)">-</button>
+                    <button id = "ramps_increment" onclick="increment(this.id)">+</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Seesaws</td>
+                <td><input id="seesaws" placeholder="Number seesaws" type="number" min="0"></td>
+                <td>
+                    <button id = "seesaws_decrement" onclick="decrement(this.id)">-</button>
+                    <button id = "seesaws_increment" onclick="increment(this.id)">+</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Obstacles</td>
+                <td><input id="obstacles" placeholder="Number obstacles" type="number" min="0"></td>
+                <td>
+                    <button id = "obstacles_decrement" onclick="decrement(this.id)">-</button>
+                    <button id = "obstacles_increment" onclick="increment(this.id)">+</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Victims</td>
+                <td><input id="victims" placeholder="Number Victims" type="number" min="0"></td>
+                <td>
+                    <button id = "victims_decrement" onclick="decrement(this.id)">-</button>
+                    <button id = "victims_increment" onclick="increment(this.id)">+</button>
+                </td>
+            </tr>
+
+            <!-- Placeholder: -->
+            <tr>
+                <td bgcolor="#FFFFFF" style="line-height:20px;" colspan=3>&nbsp;</td>
+            </tr>
+
+            <tr>
+                <td>LoPs linefol.</td>
+                <td><input id="lops_linefollowing" placeholder="LoPs during Linefollowing" type="number" min="0"></td>
+                <td>
+                    <button id = "lops_linefollowing_decrement" onclick="decrement(this.id)">-</button>
+                    <button id = "lops_linefollowing_increment" onclick="increment(this.id)">+</button>
+                </td>
+            </tr>
+
+            <tr>
+                <td>LoPs evac</td>
+                <td><input id="lops_evac" placeholder="LoPs evacuation zone" type="number" min="0"></td>
+                <td>
+                    <button id = "lops_evac_decrement" onclick="decrement(this.id)">-</button>
+                    <button id = "lops_evac_increment" onclick="increment(this.id)">+</button>                </td>
+            </tr>
+
+            <tr>
+                <td>Exit bonus?</td>
+                <td><input type="checkbox" id="exit_bonus" name="exit_bonus" value="yes"></td>
+                <td>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+        <h2>Total score:</h2>
+        <h1><p id="result">0</p></h1>
+        
+
+        <br>
+        <br>
+        <br>
+        <!-- Config: -->
+        <h3>Config zone, adjust multipliers here:</h3>
+        <br>
+        <input id="victim_multiplier" placeholder="victim (default: 1.4)" type="number">
+        <br>
+        <input id="evac_lop_multiplier" placeholder="evac LoPs (default: 0.05)" type="number">
+	</body>
+</html>
